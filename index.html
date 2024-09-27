@@ -1,0 +1,1689 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Kedai Buah Dayat - Vegetable Website Template</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@600;800&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" role="status"></div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar start -->
+        <div class="container-fluid fixed-top">
+            <div class="container topbar bg-primary d-none d-lg-block">
+                <div class="d-flex justify-content-between">
+                    <div class="top-info ps-2">
+                        <small class="me-3"><i class="fas fa-map-marker-alt me-2 text-secondary"></i> <a href="#" class="text-white">Jl. Raya Bandar Buat No.25, Bandar Buat, Kec. Lubuk Kilangan Kota Padang</a></small>
+                  
+                    </div>
+                </div>
+            </div>
+            <div class="container px-0">
+                <nav class="navbar navbar-light bg-white navbar-expand-xl">
+                    <a href="index.html" class="navbar-brand"><h1 class="text-primary display-6">Kedai Buah dan Oleh-Oleh Dayat</h1></a>
+                    <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="fa fa-bars text-primary"></span>
+                    </button>
+                    <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
+                        <div class="navbar-nav mx-auto">
+                            <a href="index.html" class="nav-item nav-link active">Home</a>
+                            <a href="shop.html" class="nav-item nav-link">Buah-Buahan</a>
+                            <a href="shop-detail.html" class="nav-item nav-link">Oleh-oleh</a>
+                            <a href="contact.html" class="nav-item nav-link">Contact</a>
+                         
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Navbar End -->
+
+
+        <!-- Modal Search Start -->
+        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Search by keyword</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center">
+                        <div class="input-group w-75 mx-auto d-flex">
+                            <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
+                            <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Search End -->
+
+
+        <!-- Hero Start -->
+        <div class="container-fluid py-5 mb-5 hero-header">
+            <div class="container py-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-md-12 col-lg-7">
+                        <h4 class="mb-3 text-secondary">Kualitas Terjamin!</h4>
+                        <h1 class="mb-5 display-3 text-primary">Pasar Buah dan Oleh-Oleh</h1>
+                        <div class="position-relative mx-auto">
+                            <input class="form-control border-2 border-secondary w-75 py-3 px-4 rounded-pill" type="number" placeholder="Search">
+                            <button type="submit" class="btn btn-primary border-2 border-secondary py-3 px-4 position-absolute rounded-pill text-white h-100" style="top: 0; right: 25%;">Submit Now</button>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-5">
+                        <div id="carouselId" class="carousel slide position-relative" data-bs-ride="carousel">
+                            <div class="carousel-inner" role="listbox">
+                                <div class="carousel-item active rounded">
+                                    <img src="img/buaha buahan.jpg" class="img-fluid w-100 h-100 bg-secondary rounded" alt="First slide">
+                                    <a href="#" class="btn px-4 py-2 text-white rounded">Buah-Buahan</a>
+                                </div>
+                                <div class="carousel-item rounded">
+                                    <img src="img/keripik balado.jpg" class="img-fluid w-100 h-100 rounded" alt="Second slide">
+                                    <a href="#" class="btn px-4 py-2 text-white rounded">Oleh-oleh</a>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Hero End -->
+
+
+        <!-- Featurs Section Start -->
+        <div class="container-fluid featurs py-5">
+            <div class="container py-5">
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="featurs-item text-center rounded bg-light p-4">
+                            <div class="featurs-icon btn-square rounded-circle bg-secondary mb-5 mx-auto">
+                                <i class="fas fa-car-side fa-3x text-white"></i>
+                            </div>
+                            <div class="featurs-content text-center">
+                                <h5>Pesanan akan diantar ke alamat yang dituju</h5>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="featurs-item text-center rounded bg-light p-4">
+                            <div class="featurs-icon btn-square rounded-circle bg-secondary mb-5 mx-auto">
+                                <i class="fas fa-user-shield fa-3x text-white"></i>
+                            </div>
+                            <div class="featurs-content text-center">
+                                <h5>Pembayaran dapat dilakukan Tunai dan Via Transfer</h5>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="featurs-item text-center rounded bg-light p-4">
+                            <div class="featurs-icon btn-square rounded-circle bg-secondary mb-5 mx-auto">
+                                <i class="fas fa-exchange-alt fa-3x text-white"></i>
+                            </div>
+                            <div class="featurs-content text-center">
+                                <h5>Jaminan uang kembali jika pesanan tidak sampai</h5>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="featurs-item text-center rounded bg-light p-4">
+                            <div class="featurs-icon btn-square rounded-circle bg-secondary mb-5 mx-auto">
+                                <i class="fa fa-phone-alt fa-3x text-white"></i>
+                            </div>
+                            <div class="featurs-content text-center">
+                                <h5>Layanan Cepat dan Tanggap</h5>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Featurs Section End -->
+
+
+        <!-- Fruits Shop Start-->
+        <div class="container-fluid fruite py-5">
+            <div class="container py-5">
+                <div class="tab-class text-center">
+                    <div class="row g-4">
+                        <div class="col-lg-4 text-start">
+                            <h1>Our Organic Products</h1>
+                        </div>  
+                        <div class="col-lg-8 text-end">
+                            <ul class="nav nav-pills d-inline-flex text-center mb-5">
+                                <li class="nav-item">
+                                    <a class="d-flex m-2 py-2 bg-light rounded-pill active" data-bs-toggle="pill" href="#tab-1">
+                                        <span class="text-dark" style="width: 130px;">All Products</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="d-flex py-2 m-2 bg-light rounded-pill" data-bs-toggle="pill" href="#tab-2">
+                                        <span class="text-dark" style="width: 130px;">Buah-Buahan</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="d-flex m-2 py-2 bg-light rounded-pill" data-bs-toggle="pill" href="#tab-3">
+                                        <span class="text-dark" style="width: 130px;">Oleh-oleh</span>
+                                    
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tab-content">
+                        <div id="tab-1" class="tab-pane fade show p-0 active">
+                            <div class="row g-4">
+                                <div class="col-lg-12">
+                                    <div class="row g-4">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="img/jeruk madu.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Jeruk Madu</h4>
+                                                    <p>Segar dan manis alami, jeruk madu siap menemani harimu! Yuk, pesan sekarang untuk stok buah segar dirumah!</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">Rp 25.000/kg</p>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="img/semangka.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Semangka Biji</h4>
+                                                    <p>Segar dan manis! Dapatkan semangka pilihan terbaik dalam berbagai ukuran dengan harga terjangkau dikedai kami.</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">Rp 7.000/kg</p>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="img/Bengkuang.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Bengkuang</h4>
+                                                    <p>Segar dan sehat! Rasakan kesegaran alami bengkuang yang manis dan renyah, cocok untuk camilan sehat atau rujak segar.</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">Rp 10.000/kg</p>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="img/Pepaya .jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Pepaya</h4>
+                                                    <p>Segar dan manis! Cocok untuk menambah asupan vitamin C Anda. Yuk, beli sekarang, segarnya pasti bikin ketagihan!</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">Rp 7.000/kg</p>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="img/pir madu.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Buah Pir Madu</h4>
+                                                    <p>Segar dan manis! Buah Pir berkualitas yang Kaya akan serat dan vitamin, Yuk, pesan sekarang untuk stok terbatas!</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">Rp28.000/kg</p>
+                                                 </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="img/mangga arum manis.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Mangga Madu</h4>
+                                                    <p>Segar & Manis! Dijamin segar dan Cocok untuk jus, rujak, atau langsung dinikmati. Stok terbatas, yuk pesan sekarang juga!</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">Rp40.000/kg</p>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="img/apel hijau.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Apel Hijau</h4>
+                                                    <p>Segar dan renyah! Apel hijau pilihan dengan rasa manis dan sedikit asam yang menyegarkan. Dapatkan sekarang juga!</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">Rp55.000/kg</p>
+                                                 </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="img/jeruk payakumbuh.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h5>Jeruk Payakumbuh</h5>
+                                                    <p>Segar dan manis! Nikmati jeruk yang langsung dari daerah asli Payakumbuh yang kaya vitamin C, dan harga terjangkau. </p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">Rp25.000/kg</p>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="img/apel fuji.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Apel Fuji</h4>
+                                                    <p>Segar dan manis, apel Fuji pilihan terbaik untuk kesehatan Anda! Yuk, pesan sekarang dan nikmati kesegarannya di rumah.</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">Rp 55.000/kg</p>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="img/pisang.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Pisang</h4>
+                                                    <p>Segar dan Lezat! Nikmati Manisnya Pisang Segar Setiap Hari! kaya akan serat, vitamin alami yang baik untuk tubuh Anda.</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">Rp 15.000/kg</p>
+                                                </div>
+                                                </div>
+                                            </div>
+                                         </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="img/alpukat mentega.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Alpukat Mentega</h4>
+                                                    <p>Memiliki daging buah yang lembut, bertekstur halus dan sering dinikmati dalam salad, roti panggang, atau jus lezat.</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">Rp 25.000/kg</p>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="img/buah naga.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Naga</h4>
+                                                    <p>Rasakan Kesegaran Buah Naga! Buah yang kaya vitamin C, antioksidan, dan serat, tak hanya lezat tapi juga menyehatkan.</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">Rp 33.000/kg</p>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="img/semangka non biji.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Semangka Non Biji</h4>
+                                                    <p>Buah manis dan segar ini hadir tanpa biji, sehingga lebih praktis untuk dinikmati kapan saja.</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">Rp 10.000/kg</p>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="img/semangka kuning.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Semangka Kuning</h4>
+                                                    <p>Segarkan harimu dengan Semangka Kuning berwarna cerah dan rasa yang lebih manis daripada semangka biasa</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">Rp 8.000/kg</p>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="img/nanas.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Nanas</h4>
+                                                    <p>Segar, Manis, dan Penuh Rasa! Dapatkan nanas berkualitas terbaik,Segera beli dan rasakan kesegarannya!"</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">Rp 10.000/kg</p>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="img/anggur peru.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Anggur Peru</h4>
+                                                    <p>Nikmati kelezatan premium dengan Anggur Peru, buah segar berkualitas tinggi yang manis dan renyah. Yuk beli sekarang juga!</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">Rp 100.000/kg</p>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="img/kelengkeng.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Kelengkeng</h4>
+                                                    <p>Manis, Segar, dan Kaya Nutrisi! siap memanjakan lidah Anda dengan rasanya yang manis dan teksturnya yang lembut..</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">Rp 60.000/kg</p>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="img/lemon.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Lemon</h4>
+                                                    <p>Segarkan harimu dengan Lemon Segar penuh vitamin C dan rasa asam menyegarkan! Dapatkan Lemon Segar sekarang.</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">Rp 55.000/kg</p>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="img/stroberi.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Stroberi</h4>
+                                                    <p>Manjakan dirimu dengan kesegaran manis dari Stroberi Segar,Nikmati rasanya dalam setiap gigitan!</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">Rp 15.000/kg</p>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="img/melon hijau.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Melon Hijau</h4>
+                                                    <p>Rasakan kesegaran yang luar biasa dengan Melon Hijau! Nikmati daging buah melon hijau yang manis dan lembut!</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">Rp 15.000/buah</p>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="img/melon oren.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Melon Oren</h4>
+                                                    <p>Temukan kesegaran manis dari Melon Kuning yang memikat! Dengan daging buah berwarna kuning cerah dan rasa yang manis</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">Rp 18.000/buah</p>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="img/melon golden.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Melon Golden</h4>
+                                                    <p>Nikmati kelezatan mewah dari Melon Golden! Dengan kulit emas yang memikat dan daging buah yang lembut</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">Rp 22.000/buah</p>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="img/sankis.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Sankis</h4>
+                                                    <p>Segarkan hari Anda dengan buah Sangkis, buah eksotis yang penuh dengan rasa! Dengan daging buah yang manis dan tekstur renyah</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">Rp 70.000/kg</p>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="img/salak.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Salak</h4>
+                                                    <p>Rasakan kelezatan khas dari Salak, buah tropis yang unik dengan tekstur renyah dan rasa manis-asam yang menggugah selera</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">Rp 15.000/kg</p>
+                                                </div>
+                                                </div>
+                                            </div>
+                               
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-2" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-12">
+                                    <div class="row g-4">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="img/jeruk madu.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Jeruk Madu</h4>
+                                                    <p>Segar dan manis alami, jeruk madu siap menemani harimu! Yuk, pesan sekarang untuk stok buah segar dirumah!</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">Rp 25.000/kg</p>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="img/semangka.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Semangka Biji</h4>
+                                                    <p>Segar dan manis! Dapatkan semangka pilihan terbaik dalam berbagai ukuran dengan harga terjangkau dikedai kami.</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">Rp 7.000/kg</p>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="img/Bengkuang.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Bengkuang</h4>
+                                                    <p>Segar dan sehat! Rasakan kesegaran alami bengkuang yang manis dan renyah, cocok untuk camilan sehat atau rujak segar.</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">Rp 10.000/kg</p>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="img/Pepaya .jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Pepaya</h4>
+                                                    <p>Segar dan manis! Cocok untuk menambah asupan vitamin C Anda. Yuk, beli sekarang, segarnya pasti bikin ketagihan!</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">Rp 7.000/kg</p>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="img/pir madu.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Buah Pir Madu</h4>
+                                                    <p>Segar dan manis! Buah Pir berkualitas yang Kaya akan serat dan vitamin, Yuk, pesan sekarang untuk stok terbatas!</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">Rp28.000/kg</p>
+                                                 </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="img/mangga arum manis.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Mangga Madu</h4>
+                                                    <p>Segar & Manis! Dijamin segar dan Cocok untuk jus, rujak, atau langsung dinikmati. Stok terbatas, yuk pesan sekarang juga!</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">Rp40.000/kg</p>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="img/apel hijau.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Apel Hijau</h4>
+                                                    <p>Segar dan renyah! Apel hijau pilihan dengan rasa manis dan sedikit asam yang menyegarkan. Dapatkan sekarang juga!</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">Rp55.000/kg</p>
+                                                 </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="img/jeruk payakumbuh.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h5>Jeruk Payakumbuh</h5>
+                                                    <p>Segar dan manis! Nikmati jeruk yang langsung dari daerah asli Payakumbuh yang kaya vitamin C, dan harga terjangkau. </p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">Rp25.000/kg</p>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="img/apel fuji.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Apel Fuji</h4>
+                                                    <p>Segar dan manis, apel Fuji pilihan terbaik untuk kesehatan Anda! Yuk, pesan sekarang dan nikmati kesegarannya di rumah.</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">Rp 55.000/kg</p>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="img/pisang.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Pisang</h4>
+                                                    <p>Segar dan Lezat! Nikmati Manisnya Pisang Segar Setiap Hari! kaya akan serat, vitamin alami yang baik untuk tubuh Anda.</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">Rp 15.000/kg</p>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="img/alpukat mentega.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Alpukat Mentega</h4>
+                                                    <p>Memiliki daging buah yang lembut, bertekstur halus dan sering dinikmati dalam salad, roti panggang, atau jus lezat.</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">Rp 25.000/kg</p>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="img/buah naga.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Naga</h4>
+                                                    <p>Rasakan Kesegaran Buah Naga! Buah yang kaya vitamin C, antioksidan, dan serat, tak hanya lezat tapi juga menyehatkan.</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">Rp 33.000/kg</p>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="img/semangka non biji.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Semangka Non Biji</h4>
+                                                    <p>Buah manis dan segar ini hadir tanpa biji, sehingga lebih praktis untuk dinikmati kapan saja.</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">Rp 10.000/kg</p>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="img/semangka kuning.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Semangka Kuning</h4>
+                                                    <p>Segarkan harimu dengan Semangka Kuning berwarna cerah dan rasa yang lebih manis daripada semangka biasa</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">Rp 8.000/kg</p>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="img/nanas.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Nanas</h4>
+                                                    <p>Segar, Manis, dan Penuh Rasa! Dapatkan nanas berkualitas terbaik,Segera beli dan rasakan kesegarannya!"</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">Rp 10.000/kg</p>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="img/anggur peru.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Anggur Peru</h4>
+                                                    <p>Nikmati kelezatan premium dengan Anggur Peru, buah segar berkualitas tinggi yang manis dan renyah. Yuk beli sekarang juga!</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">Rp 100.000/kg</p>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="img/kelengkeng.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Kelengkeng</h4>
+                                                    <p>Manis, Segar, dan Kaya Nutrisi! siap memanjakan lidah Anda dengan rasanya yang manis dan teksturnya yang lembut..</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">Rp 60.000/kg</p>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="img/lemon.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Lemon</h4>
+                                                    <p>Segarkan harimu dengan Lemon Segar penuh vitamin C dan rasa asam menyegarkan! Dapatkan Lemon Segar sekarang.</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">Rp 55.000/kg</p>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="img/stroberi.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Stroberi</h4>
+                                                    <p>Manjakan dirimu dengan kesegaran manis dari Stroberi Segar,Nikmati rasanya dalam setiap gigitan!</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">Rp 15.000/kg</p>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="img/melon hijau.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Melon Hijau</h4>
+                                                    <p>Rasakan kesegaran yang luar biasa dengan Melon Hijau! Nikmati daging buah melon hijau yang manis dan lembut!</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">Rp 15.000/buah</p>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="img/melon oren.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Melon Oren</h4>
+                                                    <p>Temukan kesegaran manis dari Melon Kuning yang memikat! Dengan daging buah berwarna kuning cerah dan rasa yang manis</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">Rp 18.000/buah</p>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="img/melon golden.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Melon Golden</h4>
+                                                    <p>Nikmati kelezatan mewah dari Melon Golden! Dengan kulit emas yang memikat dan daging buah yang lembut</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">Rp 22.000/buah</p>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="img/sankis.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Sankis</h4>
+                                                    <p>Segarkan hari Anda dengan buah Sangkis, buah eksotis yang penuh dengan rasa! Dengan daging buah yang manis dan tekstur renyah</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">Rp 70.000/kg</p>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="img/salak.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Salak</h4>
+                                                    <p>Rasakan kelezatan khas dari Salak, buah tropis yang unik dengan tekstur renyah dan rasa manis-asam yang menggugah selera</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">Rp 15.000/kg</p>
+                                                </div>
+                                                </div>
+                                            </div>
+                                           </div>
+                                        </div>
+                                         </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>      
+            </div>
+        </div>
+        <!-- Fruits Shop End-->
+
+
+        <!-- Featurs Start -->
+        <div class="container-fluid service py-5">
+            <div class="container py-5">
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-6 col-lg-4">
+                        <a href="#">
+                            <div class="service-item bg-secondary rounded border border-secondary">
+                                <img src="img/pepaya sachet.jpg" class="img-fluid rounded-top w-100" alt="">
+                                <div class="px-4 rounded-bottom">
+                                    <div class="service-content bg-primary text-center p-4 rounded">
+                                        <h5 class="text-white">Menu Olahan Buah</h5>
+                                        <h3 class="mb-0">Buah Sachet</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <a href="#">
+                            <div class="service-item bg-dark rounded border border-dark">
+                                <img src="img/salad buah.jpg" class="img-fluid rounded-top w-100" alt="">
+                                <div class="px-4 rounded-bottom">
+                                    <div class="service-content bg-light text-center p-4 rounded">
+                                        <h5 class="text-primary">menu Olahan Buah</h5>
+                                        <h3 class="mb-0">Salad Buah</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <a href="#">
+                            <div class="service-item bg-primary rounded border border-primary">
+                                <img src="img/parsel buah.jpg" class="img-fluid rounded-top w-100" alt="">
+                                <div class="px-4 rounded-bottom">
+                                    <div class="service-content bg-secondary text-center p-4 rounded">
+                                        <h5 class="text-white">Menu Olahan Buah</h5>
+                                        <h3 class="mb-0">Parsel Buah</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Featurs End -->
+
+
+        <!-- Vesitable Shop Start-->
+        <div class="container-fluid vesitable py-5">
+            <div class="container py-5">
+                <h1 class="mb-0">Oleh-oleh</h1>
+                <div class="owl-carousel vegetable-carousel justify-content-center">
+                    <div class="border border-primary rounded position-relative vesitable-item">
+                        <div class="Oleh-Oleh-img">
+                            <img src="img/keripik balado.jpg" class="img-fluid w-100 rounded-top" alt="">
+                        </div>
+                        <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Khas Minang</div>
+                        <div class="p-4 rounded-bottom">
+                            <h4>Keripik Balado</h4>
+                            <p>Nikmati keripik balado yang renyah dengan cita rasa pedas gurih khas Minang!</p>
+                            <div class="d-flex justify-content-between flex-lg-wrap">
+                                <p class="text-dark fs-5 fw-bold mb-0">Rp20.000</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="border border-primary rounded position-relative vesitable-item">
+                        <div class="Oleh-Oleh-img">
+                            <img src="img/kerupuk 988.jpg" class="img-fluid w-100 rounded-top" alt="">
+                        </div>
+                        <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Kas Minang</div>
+                        <div class="p-4 rounded-bottom">
+                            <h4>Kerupuk 988</h4>
+                            <p>Rasakan kerenyahan kerupuk 988 yang klasik & menggugah selera!</p>
+                            <div class="d-flex justify-content-between flex-lg-wrap">
+                                <p class="text-dark fs-5 fw-bold mb-0">Rp15.000</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="border border-primary rounded position-relative vesitable-item">
+                        <div class="Oleh-oleh-img">
+                            <img src="img/keripik kentang.jpg" class="img-fluid w-100 rounded-top bg-light" alt="">
+                        </div>
+                        <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Khas Minang</div>
+                        <div class="p-4 rounded-bottom">
+                            <h4>Keripik Kentang</h4>
+                            <p>Rasakan Keripik kentang yang gurih, renyah dan kriuk-kriuk! </p>
+                            <div class="d-flex justify-content-between flex-lg-wrap">
+                                <p class="text-dark fs-5 fw-bold mb-0">Rp18.000</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="border border-primary rounded position-relative vesitable-item">
+                        <div class="Oleh-Oleh-img">
+                            <img src="img/keripik ikan asin.jpg" class="img-fluid w-100 rounded-top" alt="">
+                        </div>
+                        <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Khas Minang</div>
+                        <div class="p-4 rounded-bottom">
+                            <h4>Peyek Ikan Asin</h4>
+                            <p>Renyahnya Peyek Ikan asin, sangat pas di segala suasana! </p>
+                            <div class="d-flex justify-content-between flex-lg-wrap">
+                                <p class="text-dark fs-5 fw-bold mb-0">Rp15.000</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="border border-primary rounded position-relative vesitable-item">
+                        <div class="Oleh-Oleh-img">
+                            <img src="img/keripik bawang.jpg" class="img-fluid w-100 rounded-top" alt="">
+                        </div>
+                        <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Khas Minang</div>
+                        <div class="p-4 rounded-bottom">
+                            <h4>Keripik Bawang</h4>
+                            <p>Keripik Bawang Gurih dan nikmat,Teman ngemil yang tak terlupakan!</p>
+                            <div class="d-flex justify-content-between flex-lg-wrap">
+                                <p class="text-dark fs-5 fw-bold mb-0">Rp15.000</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="border border-primary rounded position-relative vesitable-item">
+                        <div class="Kacang Tajin-img">
+                            <img src="img/kacang tajin.jpg" class="img-fluid w-100 rounded-top" alt="">
+                        </div>
+                        <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Khas Minang</div>
+                        <div class="p-4 rounded-bottom">
+                            <h4>Kacang Tajin</h4>
+                            <p>Kacang Tajin, Renyahnya di mulut,Gurihnya di Hati!Bikin Ketagihan. </p>
+                            <div class="d-flex justify-content-between flex-lg-wrap">
+                                <p class="text-dark fs-5 fw-bold mb-0">Rp15.000</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="border border-primary rounded position-relative vesitable-item">
+                        <div class="Oleh-Oleh-img">
+                            <img src="img/keripik ubi ungu.jpg" class="img-fluid w-100 rounded-top" alt="">
+                        </div>
+                        <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Khas Minang</div>
+                        <div class="p-4 rounded-bottom">
+                            <h4>Keripik Ubi Ungu</h4>
+                            <p>Rasakan Ubi ungu lokal dengan kriuk yang selalu bikin kangen!</p>
+                            <div class="d-flex justify-content-between flex-lg-wrap">
+                                <p class="text-dark fs-5 fw-bold mb-0">Rp15.000</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="border border-primary rounded position-relative vesitable-item">
+                        <div class="Oleh-Oleh-img">
+                            <img src="img/keripik angka 8.jpg" class="img-fluid w-100 rounded-top" alt="">
+                        </div>
+                        <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Khas Minang</div>
+                        <div class="p-4 rounded-bottom">
+                            <h4>Keripik angka 8</h4>
+                            <p>Nikmati rasa Keripik angka 8, Bentuknya uni & Rasanya autentik!</p>
+                            <div class="d-flex justify-content-between flex-lg-wrap">
+                                <p class="text-dark fs-5 fw-bold mb-0">Rp15.000</p>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="border border-primary rounded position-relative vesitable-item">
+                        <div class="Oleh-Oleh-img">
+                            <img src="img/stick keju.jpg" class="img-fluid w-100 rounded-top" alt="">
+                        </div>
+                        <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Khas Minang</div>
+                        <div class="p-4 rounded-bottom">
+                            <h4>Stick Keju</h4>
+                            <p>Cemilan seru dengan gurih yang pas dan bikin kita ketagihan!</p>
+                            <div class="d-flex justify-content-between flex-lg-wrap">
+                                <p class="text-dark fs-5 fw-bold mb-0">Rp18.000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border border-primary rounded position-relative vesitable-item">
+                            <div class="Oleh-Oleh-img">
+                                <img src="img/pisang salai.jpg" class="img-fluid w-100 rounded-top" alt="">
+                            </div>
+                            <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Khas Minang</div>
+                            <div class="p-4 rounded-bottom">
+                                <h4>Pisang Salai</h4>
+                                <p>Kriuk manis Pisang Salai, manisnya alami, aromanya menggoda!</p>
+                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                    <p class="text-dark fs-5 fw-bold mb-0">Rp18.000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border border-primary rounded position-relative vesitable-item">
+                                <div class="Oleh-Oleh-img">
+                                    <img src="img/kerupuk palembang.jpg" class="img-fluid w-100 rounded-top" alt="">
+                            </div>
+                            <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Khas Minang</div>
+                            <div class="p-4 rounded-bottom">
+                                <h5>Kerupuk Palembang</h5>
+                                <p>Gurihnya kerupuk Palembang, Pas dilidah, pas dihati!</p>
+                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                    <p class="text-dark fs-5 fw-bold mb-0">Rp15.000</p>
+                            </div>
+                         </div>
+                    </div>
+                    <div class="border border-primary rounded position-relative vesitable-item">
+                                <div class="Oleh-Oleh-img">
+                                    <img src="img/keripik sopik.jpg" class="img-fluid w-100 rounded-top" alt="">
+                            </div>
+                            <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Khas Minang</div>
+                            <div class="p-4 rounded-bottom">
+                                <h4>Kue Sapik</h4>
+                                <p>Nikmati kelezatan Kue Sapik, cemilan tradisional yang menggoda</p>
+                            <div class="d-flex justify-content-between flex-lg-wrap">
+                                <p class="text-dark fs-5 fw-bold mb-0">Rp18.000</p>
+                            </div>
+                         </div>
+                    </div>
+                    <div class="border border-primary rounded position-relative vesitable-item">
+                        <div class="Oleh-Oleh-img">
+                            <img src="img/dendeng renyah.jpg" class="img-fluid w-100 rounded-top" alt="">
+                        </div>
+                        <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Khas Minang</div>
+                        <div class="p-4 rounded-bottom">
+                            <h4>Dendeng Daging</h4>
+                            <p>dendeng dengan cita rasa tradisional dengan kualitas premium</p>
+                        <div class="d-flex justify-content-between flex-lg-wrap">
+                                <p class="text-dark fs-5 fw-bold mb-0">Rp30.000</p>
+                            </div>
+                         </div>
+                    </div>
+                    <div class="border border-primary rounded position-relative vesitable-item">
+                        <div class="Oleh-Oleh-img">
+                                <img src="img/dendeng telur.jpg" class="img-fluid w-100 rounded-top" alt="">
+                        </div>
+                        <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Khas Minang</div>
+                        <div class="p-4 rounded-bottom">
+                                <h4>Rendang Telur</h4>
+                                <p>Cobalah Rendang Telur!Hidangan klasik dengan rasa yang memikat!</p>
+                        <div class="d-flex justify-content-between flex-lg-wrap">
+                                    <p class="text-dark fs-5 fw-bold mb-0">Rp15.000</p>
+                              </div>
+                            </div>
+                    </div>
+                    <div class="border border-primary rounded position-relative vesitable-item">
+                        <div class="Oleh-Oleh-img">
+                                <img src="img/peyek kacang.jpg" class="img-fluid w-100 rounded-top" alt="">
+                        </div>
+                        <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Khas Minang</div>
+                        <div class="p-4 rounded-bottom">
+                                <h4>Peyek Kacang</h4>
+                                <p>Nikmati kriuknya peyek kacang, cemilan tradisional  yang bikin ketagihan!</p>
+                        <div class="d-flex justify-content-between flex-lg-wrap">
+                                    <p class="text-dark fs-5 fw-bold mb-0">Rp18.000</p>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="border border-primary rounded position-relative vesitable-item">
+                        <div class="Oleh-Oleh-img">
+                                <img src="img/kamaloyang.jpg" class="img-fluid w-100 rounded-top" alt="">
+                        </div>
+                        <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Khas Minang</div>
+                        <div class="p-4 rounded-bottom">
+                                <h4>Kamaloyang</h4>
+                                <p>Gurihnya Kamaloyang, cemilan unik yang membuat setiap moment lebih special!</p>
+                        <div class="d-flex justify-content-between flex-lg-wrap">
+                                    <p class="text-dark fs-5 fw-bold mb-0">Rp15.000</p>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="border border-primary rounded position-relative vesitable-item">
+                            <div class="Oleh-Oleh-img">
+                                 <img src="img/keripik ubi.jpg" class="img-fluid w-100 rounded-top" alt="">
+                            </div>
+                            <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Khas Minang</div>
+                            <div class="p-4 rounded-bottom">
+                                <h4>Keripik Ubi</h4>
+                                <p>Nikmati rasa Keripik Ubi yang Gurih, teman ngemil yang sempurna</p>
+                            <div class="d-flex justify-content-between flex-lg-wrap">
+                                     <p class="text-dark fs-5 fw-bold mb-0">Rp15.000</p>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="border border-primary rounded position-relative vesitable-item">
+                            <div class="Oleh-Oleh-img">
+                                <img src="img/chitalas.jpg" class="img-fluid w-100 rounded-top" alt="">
+                            </div>
+                            <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Khas Minang</div>
+                            <div class="p-4 rounded-bottom">
+                                <h4>Chitalas</h4>
+                                <p>Cemilan unik yang menggugah selera & pas setiap suasana!</p>
+                            <div class="d-flex justify-content-between flex-lg-wrap">
+                                    <p class="text-dark fs-5 fw-bold mb-0">Rp15.000</p>
+                                  </div>
+                            </div>
+                    </div>
+                    <div class="border border-primary rounded position-relative vesitable-item">
+                            <div class="Oleh-Oleh-img">
+                                <img src="img/stick bawang.jpg" class="img-fluid w-100 rounded-top" alt="">
+                            </div>
+                            <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Khas Minang</div>
+                            <div class="p-4 rounded-bottom">
+                                <h4>Stick Bawang</h4>
+                                <p>Renyahnya stick Bawang dan Gurihnya bikin nagih!</p>
+                            <div class="d-flex justify-content-between flex-lg-wrap">
+                                    <p class="text-dark fs-5 fw-bold mb-0">Rp15.000</p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Vesitable Shop End -->
+
+
+        <!-- Banner Section Start-->
+        <div class="container-fluid banner bg-secondary my-5">
+            <div class="container py-5">
+                <div class="row g-4 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="py-4">
+                            <h1 class="display-3 text-white">Buah Eksotis Segar</h1>
+                            <p class="fw-normal display-3 text-dark mb-4">Jangan lupa Berkunjung ke Web dan Instagram Kami</p>
+                            <p class="mb-4 text-dark">Akan ada promo tertentu di hari tertentu juga.</p>
+                        
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="position-relative">
+                            <img src="img/semangka.jpg" class="img-fluid w-100 rounded" alt="">
+                                                                                  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Banner Section End -->
+
+
+        <!-- Bestsaler Product Start -->
+        <div class="container-fluid py-5">
+            <div class="container py-5">
+                <div class="text-center mx-auto mb-5" style="max-width: 700px;">
+                    <h1 class="display-4">Bestseller Products</h1>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-6 col-xl-4">
+                        <div class="p-4 rounded bg-light">
+                            <div class="row align-items-center">
+                                <div class="col-6">
+                                    <img src="img/semangka.jpg" class="img-fluid rounded-circle w-100" alt="">
+                                </div>
+                                <div class="col-6">
+                                    <a href="#" class="h6">Semangka Biji</a>
+                                    <div class="d-flex my-3">
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                    </div>
+                                    <h5 class="mb-3">Rp7000/kg</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4">
+                        <div class="p-4 rounded bg-light">
+                            <div class="row align-items-center">
+                                <div class="col-6">
+                                    <img src="img/Pepaya .jpg" class="img-fluid rounded-circle w-100" alt="">
+                                </div>
+                                <div class="col-6">
+                                    <a href="#" class="h6">Pepaya</a>
+                                    <div class="d-flex my-3">
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                    </div>
+                                    <h5 class="mb-3">Rp7000/kg</h5>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4">
+                        <div class="p-4 rounded bg-light">
+                            <div class="row align-items-center">
+                                <div class="col-6">
+                                    <img src="img/jeruk payakumbuh.jpg" class="img-fluid rounded-circle w-100" alt="">
+                                </div>
+                                <div class="col-6">
+                                    <a href="#" class="h6">Jeruk Payakumbh</a>
+                                    <div class="d-flex my-3">
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                    </div>
+                                    <h5 class="mb-3">Rp25.000/kg</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4">
+                        <div class="p-4 rounded bg-light">
+                            <div class="row align-items-center">
+                                <div class="col-6">
+                                    <img src="img/alpukat mentega.jpg" class="img-fluid rounded-circle w-100" alt="">
+                                </div>
+                                <div class="col-6">
+                                    <a href="#" class="h6">Alpukat Mentega</a>
+                                    <div class="d-flex my-3">
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <h5 class="mb-3">Rp25.000/kg</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4">
+                        <div class="p-4 rounded bg-light">
+                            <div class="row align-items-center">
+                                <div class="col-6">
+                                    <img src="img/apel fuji.jpg" class="img-fluid rounded-circle w-100" alt="">
+                                </div>
+                                <div class="col-6">
+                                    <a href="#" class="h6">Apel Fuji</a>
+                                    <div class="d-flex my-3">
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <h5 class="mb-3">Rp55.000/kg</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4">
+                        <div class="p-4 rounded bg-light">
+                            <div class="row align-items-center">
+                                <div class="col-6">
+                                    <img src="img/Bengkuang.jpg" class="img-fluid rounded-circle w-100" alt="">
+                                </div>
+                                <div class="col-6">
+                                    <a href="#" class="h6">Bengkuang</a>
+                                    <div class="d-flex my-3">
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <h5 class="mb-3">Rp10.000/kg</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="text-center">
+                            <img src="img/keripik balado.jpg" class="img-fluid rounded" alt="">
+                            <div class="py-4">
+                                <a href="#" class="h5">Keripik Balado</a>
+                                <div class="d-flex my-3 justify-content-center">
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                </div>
+                                <h4 class="mb-3">Rp15000/kg</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="text-center">
+                            <img src="img/keripik angka 8.jpg" class="img-fluid rounded" alt="">
+                            <div class="py-4">
+                                <a href="#" class="h5">Keripik angka 8</a>
+                                <div class="d-flex my-3 justify-content-center">
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                </div>
+                                <h4 class="mb-3">Rp15.000</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="text-center">
+                            <img src="img/dendeng telur.jpg" class="img-fluid rounded" alt="">
+                            <div class="py-4">
+                                <a href="#" class="h5">Rendang Telur</a>
+                                <div class="d-flex my-3 justify-content-center">
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                </div>
+                                <h4 class="mb-3">Rp15.000/kg</h4>
+                             </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="text-center">
+                            <img src="img/pisang salai.jpg" class="img-fluid rounded" alt="">
+                            <div class="py-2">
+                                <a href="#" class="h5">Pisang Salai</a>
+                                <div class="d-flex my-3 justify-content-center">
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                </div>
+                                <h4 class="mb-3">Rp18.000/kg</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bestsaler Product End -->
+
+
+        <!-- Fact Start -->
+        <div class="container-fluid py-5">
+            <div class="container">
+                <div class="bg-light p-5 rounded">
+                    <div class="row g-4 justify-content-center">
+                        <div class="col-md-6 col-lg-6 col-xl-3">
+                            <div class="counter bg-white rounded p-5">
+                                <i class="fa fa-users text-secondary"></i>
+                                <h4>Pelanggan puas</h4>
+                                <h1>100%</h1>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-xl-3">
+                            <div class="counter bg-white rounded p-5">
+                                <i class="fa fa-users text-secondary"></i>
+                                <h4>Kualitas Layanan</h4>
+                                <h1>100%</h1>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-xl-3">
+                            <div class="counter bg-white rounded p-5">
+                                <i class="fa fa-users text-secondary"></i>
+                                <h4>Kualitas Produk</h4>
+                                <h1>100%</h1>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-xl-3">
+                            <div class="counter bg-white rounded p-5">
+                                <i class="fa fa-users text-secondary"></i>
+                                <h4>Produk tersedia</h4>
+                                <h1>80</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fact Start -->
+
+
+        <!-- Tastimonial Start -->
+        <div class="container-fluid testimonial py-5">
+            <div class="container py-5">
+                <div class="testimonial-header text-center">
+                    <h4 class="text-primary">Testimoni</h4>
+                    <h1 class="display-5 mb-5 text-dark">Kata Pelanggan kami!</h1>
+                </div>
+                <div class="owl-carousel testimonial-carousel">
+                    <div class="testimonial-item img-border-radius bg-light rounded p-4">
+                        <div class="position-relative">
+                            <i class="fa fa-quote-right fa-2x text-secondary position-absolute" style="bottom: 30px; right: 0;"></i>
+                            <div class="mb-4 pb-4 border-bottom border-secondary">
+                                <p class="mb-0">Mangga muda nya pun enak dibuatin Rujak bumbu Bangkok!Enak dan Segar
+                                </p>
+                            </div>
+                            <div class="d-flex align-items-center flex-nowrap">
+                                <div class="bg-secondary rounded">
+                                    <img src="img/rujak.jpg" class="img-fluid rounded" style="width: 120px; height: 130px;" alt="">
+                                </div>
+                                <div class="ms-4 d-block">
+                                    <h4 class="text-dark">Susantimira89</h4>
+                                    <p class="m-0 pb-3">Dirumah Aja</p>
+                                    <div class="d-flex pe-5">
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item img-border-radius bg-light rounded p-4">
+                        <div class="position-relative">
+                            <i class="fa fa-quote-right fa-2x text-secondary position-absolute" style="bottom: 30px; right: 0;"></i>
+                            <div class="mb-4 pb-4 border-bottom border-secondary">
+                                <p class="mb-0">Pure Alpukat kesukaan Hanan, Alpukatnya Manis Banget! Hanannya Suka
+                                </p>
+                            </div>
+                            <div class="d-flex align-items-center flex-nowrap">
+                                <div class="bg-secondary rounded">
+                                    <img src="img/testimoi alpukat.jpg" class="img-fluid rounded" style="width: 120px; height: 130px;" alt="">
+                                </div>
+                                <div class="ms-4 d-block">
+                                    <h4 class="text-dark">Chanitarpila</h4>
+                                    <p class="m-0 pb-3">Dirumah Aja</p>
+                                    <div class="d-flex pe-5">
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item img-border-radius bg-light rounded p-4">
+                        <div class="position-relative">
+                            <i class="fa fa-quote-right fa-2x text-secondary position-absolute" style="bottom: 30px; right: 0;"></i>
+                            <div class="mb-4 pb-4 border-bottom border-secondary">
+                                <p class="mb-0">Buah yang nyampek segar-segar bun, Nggak Kecewa beli di @Kedaibuahdayat
+                                </p>
+                            </div>
+                            <div class="d-flex align-items-center flex-nowrap">
+                                <div class="bg-secondary rounded">
+                                    <img src="img/3 buah.jpg" class="img-fluid rounded" style="width: 120px; height: 130px;" alt="">
+                                </div>
+                                <div class="ms-4 d-block">
+                                    <h4 class="text-dark">Eka.adilka_MUA</h4>
+                                    <p class="m-0 pb-3">MUA</p>
+                                    <div class="d-flex pe-5">
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Tastimonial End -->
+
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5">
+            <div class="container py-5">
+                <div class="pb-4 mb-4" style="border-bottom: 1px solid rgba(226, 175, 24, 0.5) ;">
+                    <div class="row g-4">
+                        <div class="col-lg-3">
+                            <a href="#">
+                                <h2 class="text-primary mb-0">Kedai Buah dan Oleh-oleh Dayat</h2>
+                                                  
+                            </div>
+                        </div>
+                        <div class="col-lg-2">
+                            <div class="d-flex justify-content-end pt-2">
+                                <a class="btn  btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-youtube"></i></a>
+                                <a class="btn btn-outline-secondary btn-md-square rounded-circle" href=""><i class="fab fa-linkedin-in"></i></a>
+                           
+                       </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <p><h4 class="text-light mb-3">Contact</h4></p>
+                            <p>Address:Jl. Raya Bandar Buat N0.25, Bandar Buat, Kec. Lubuk Begalung</p>
+                            <p>Email: kedaibuahdayat@gmail.com</p>
+                            <p>Phone: 081378459632</p>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright bg-dark py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>Your Site Name</a>, All right reserved.</span>
+                    </div>
+                    <div class="col-md-6 my-auto text-center text-md-end text-white">
+                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                        Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary border-3 border-primary rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    </body>
+
+</html>
